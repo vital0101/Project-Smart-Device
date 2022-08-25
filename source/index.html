@@ -1,72 +1,138 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Описание проекта">
-    <title>Smart Divice</title>
-    <link rel="preload" href="fonts/PTMono.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/rouble.woff2" as="font" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.min.css">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <div class="container"></div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="container">
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Описание проекта">
+  <title>Smart Divice</title>
+  <link rel="preload" href="fonts/PTMono.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/RobotoCondensed.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/rouble.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="hero-header-wrapper">
+      <header class="page-header">
+        <div class="container">
+          <div class="page-header__wrapper">
+            <nav class="page-header__nav navigation">
+              <div class="navigation__logo logo">
+                <a>
+                  <picture>
+                    <source media="(max-width: 768px)" srcset="img/logo.svg">
+                    <img src="img/logo-text.svg" alt="Логотип Smart Divice." width="215" height="55">
+                  </picture>
+                </a>
+              </div>
+              <div class="navigation__user">
+                <div class="navigation__email">
+                  <a href="mailto:info@sd.ru">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#email"></use>
+                    </svg>
+                    <span>
+                      info@sd.ru
+                    </span>
+                  </a>
+                </div>
+                <div class="navigation__phone">
+                  <a href="tel:+74950005252">
+                    <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                      <use href="img/sprite_auto.svg#phone-call"></use>
+                    </svg>
+                    <span>
+                      +7 (495) 000 52 52
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <button class="page-header__btn button" type="button" data-open-modal="feedback">Заказать звонок</button>
+          </div>
+        </div>
+    </div>
+    </header>
+    <section class="hero">
       <div class="container">
-        <h1>Тестовая страница.</h1>
-        <p>На данной странице показан пример модальных окон.</p>
-        <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-        <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-        <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+
       </div>
     </section>
-    </div>
+  </div>
+  <main>
+    <section class="intro">
+      <div class="container">
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
 
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="container">
+    <h1>Тестовая страница.</h1>
+    <p>На данной странице показан пример модальных окон.</p>
+    <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
+    <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
+    <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+  </div>
+  </section>
+  </div>
+
+  <!-- Модалки -->
+  <div class="modal modal--preload" data-modal="feedback">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <!-- <p class="modal__description">Обычная модалка</p> -->
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
+        <form class="form-callback" action="https://echo.htmlacademy.ru" method="post">
+          <h2>Закажите звонок</h2>
+          <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
+          <label class="visually-hidden" for="name">Введите ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Имя" required>
+
+          <label class="visually-hidden" for="phone">Введите ваш телефон</label>
+          <input type="text" name="phone" id="phone" placeholder="Телефон" required>
+
+          <label class="visually-hidden" for="note">Введите ваш вопрос</label>
+          <textarea name="note" id="note" placeholder="Ваш вопрос"></textarea>
+
+          <button class="form-callback__btn button" type="submit">Отправить</button>
+
+          <input type="checkbox" id="choiсe" name="personal-data" checked required>
+          <label for="choiсe">Я согласен на обработку моих персональных данных</label>
+          <span class="visually-hidden">Заполните это поле.</span>
+
+        </form>
       </div>
     </div>
+  </div>
 
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite_auto.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
+  <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+    <div class="modal__wrapper">
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__content">
+        <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+          <svg width="15" height="15">
+            <use xlink:href="img/sprite_auto.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </div>
+  </div>
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>
