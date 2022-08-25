@@ -791,6 +791,14 @@ button,
   pointer-events: auto;
 }
 
+.hero-header-wrapper {
+  min-height: 880px;
+  background-color: #041827;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/content/promo-desktop.jpg");
+}
+
 .page-header {
   padding-top: 30px;
   padding-bottom: 35px;
@@ -1027,6 +1035,57 @@ button,
   background-position: center;
 }
 
+.hero {
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  color: #f2f5f6;
+}
+
+.hero__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding-top: 220px;
+  padding-left: 125px;
+}
+
+.hero h2 {
+  margin: 0;
+  margin-bottom: 69px;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 21px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.hero p {
+  margin: 0;
+  margin-bottom: 47px;
+  font-family: "PTMono", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  max-width: 685px;
+  text-transform: lowercase;
+}
+
+.hero a {
+  display: block;
+  padding: 15px 25px;
+  width: 410px;
+  min-height: 55px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  color: inherit;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #00b2ff;
+}
+
+.hero a + a {
+  display: none;
+}
+
 /* @media (hover: hover), screen and (min-width: 0\0) {
   &:hover,
   &:focus {
@@ -1048,6 +1107,11 @@ button,
 }
 
 @media (max-width: 1024px) {
+  .hero-header-wrapper {
+    min-height: 640px;
+    background-image: url("../img/content/promo-tablet.jpg");
+  }
+
   .page-header {
     padding-top: 20px;
     padding-bottom: 25px;
@@ -1114,11 +1178,36 @@ button,
   .navigation__user span {
     display: none;
   }
+
+  .hero__wrapper {
+    padding-left: 0;
+  }
+
+  .hero h2 {
+    margin-bottom: 20px;
+    font-size: 64px;
+    line-height: 75px;
+  }
+
+  .hero p {
+    margin-bottom: 50px;
+  }
+
+  .hero a {
+    margin-left: 45px;
+    width: 410px;
+  }
+}
+
+@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1024px) and (min-resolution: 2dppx) {
+  .hero-header-wrapper {
+    background-image: url("../img/content/promo-tablet@2x.jpg");
+  }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 50px;
   }
 }
 
@@ -1141,11 +1230,42 @@ button,
     width: 35px;
     height: 35px;
   }
+
+  .hero__wrapper {
+    padding-left: 0;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .hero a {
+    display: none;
+  }
+
+  .hero a + a {
+    display: block;
+    margin-left: 0;
+    padding: 10px 30px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 270px;
+    min-height: 40px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 16px;
+    padding: 0 25px;
   }
 
   .modal__wrapper {
@@ -1159,5 +1279,28 @@ button,
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-header-wrapper {
+    min-height: 560px;
+    background-image: url("../img/content/promo-mobile.jpg");
+  }
+
+  .hero a + a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 320px) and (min-resolution: 2dppx) {
+  .hero-header-wrapper {
+    background-image: url("../img/content/promo-mobile@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .hero-header-wrapper {
+    background-image: url("../img/content/promo-desktop@2x.jpg");
   }
 }

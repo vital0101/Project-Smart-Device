@@ -1,0 +1,29 @@
+.hero-header-wrapper {
+  min-height: 880px;
+  background-color: $color-black-pearl;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/content/promo-desktop.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/content/promo-desktop@2x.jpg");
+  }
+
+  @media (max-width: $vp-1024) {
+    min-height: 640px;
+    background-image: url("../img/content/promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $vp-320) {
+    min-height: 560px;
+    background-image: url("../img/content/promo-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/content/promo-mobile@2x.jpg");
+    }
+  }
+}
