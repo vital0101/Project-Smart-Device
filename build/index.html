@@ -16,6 +16,7 @@
 
 <body>
   <div class="wrapper">
+    <h1 class="visually-hidden">Главная страница интернет-магазина Smart Divice</h1>
     <div class="hero-header-wrapper">
       <header class="page-header">
         <div class="container">
@@ -68,24 +69,144 @@
       </section>
     </div>
     <main>
-      <section class="intro">
+      <section class="features">
         <div class="container">
+          <div class="features__wrapper">
+            <ul class="features__list">
+              <li class="features__item">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#stopwatch"></use>
+                </svg>
+                <h2>Оперативные сроки</h2>
+                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки</p>
+              </li>
+              <li class="features__item">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#hired"></use>
+                </svg>
+                <h2>Крупные поставщики</h2>
+                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+              </li>
+              <li class="features__item">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#detective"></use>
+                </svg>
+                <h2>Полная конфиденциальность</h2>
+                <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
+              </li>
+              <li class="features__item">
+                <svg width="35" height="35" xmlns="http://www.w3.org/2000/svg">
+                  <use href="img/sprite_auto.svg#tag"></use>
+                </svg>
+                <h2>Персонализация стоимости</h2>
+                <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="container"></div>
+    <footer class="page-footer">
+      <div class="container">
+        <div class="page-footer__wrapper">
+          <div class="page-footer__logo-social-wrapper">
+            <div class="page-footer__logo">
+              <a>
+                <img src="img/logo-text.svg" alt="Логотип Smart Divice." width="215" height="55">
+              </a>
+            </div>
+            <ul class="page-footer__social social">
+              <li class="social__item">
+                <a href="#">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#">
+                  <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+                    <use href="img/sprite_auto.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="page-footer__nav-wrapper page-footer__accordion-wrapper">
+            <h2>Разделы сайта</h2>
+            <div class="page-footer__accordion page-footer__accordion-nav">
+              <div class="page-footer__nav-col-wrapper">
+                <ul class="page-footer-nav page-footer-nav--col1">
+                  <li>
+                    <a href="#">
+                      О Компании
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Продукты
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Производство печатных плат
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Монтаж печатных плат
+                    </a>
+                  </li>
+                </ul>
+                <ul class="page-footer-nav page-footer-nav--col2">
+                  <li>
+                    <a href="#">
+                      Комплектующие
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Доставка
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- <button class="button accordion" type="button"></button> -->
+          </div>
+          <div class="page-footer__contacts-wrapper page-footer__accordion-wrapper">
+            <h2>Наш офис</h2>
+            <div class="page-footer__accordion page-footer__accordion-contacts">
+              <address>г. Мытищи, Олимпийский проспект, д.10</address>
+              <a href="tel:+7495589-40-50" class="page-footer__contacts-item">+7 (495) 589-40-50</a>
+              <a href="tel:+7925389-58-29" class="page-footer__contacts-item">+7 (925) 389-58-29</a>
+              <a href="tel:+7925364-78-13" class="page-footer__contacts-item">+7 (925) 364-78-13</a>
+            </div>
+            <!-- <button class="button accordion" type="button"></button> -->
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <div class="container">
+    <!-- <div class="container">
       <h1>Тестовая страница.</h1>
       <p>На данной странице показан пример модальных окон.</p>
       <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
       <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
       <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
-    </div>
-    </section>
-  </div>
+    </div> -->
 
   <!-- Модалки -->
   <div class="modal modal--preload" data-modal="feedback">
@@ -115,7 +236,6 @@
           <input type="checkbox" id="choiсe" name="personal-data" checked required>
           <label for="choiсe">Я согласен на обработку моих персональных данных</label>
           <span class="visually-hidden">Заполните это поле.</span>
-
         </form>
       </div>
     </div>

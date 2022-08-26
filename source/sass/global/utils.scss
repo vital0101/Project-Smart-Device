@@ -70,6 +70,15 @@
   font-family: $ff-roboto-condensed;
   text-transform: uppercase;
   border: none;
+  outline: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.is-active {
+  display: block;
+}
+
+.is-hidden {
+  display: none;
 }

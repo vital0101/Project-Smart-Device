@@ -1,0 +1,28 @@
+.page-footer-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: rgba(255, 255, 255, 0.7);
+
+  &--col1 {
+    width: 220px;
+  }
+
+  &--col2 {
+    width: 220px;
+  }
+}
+
+.page-footer-nav li {
+  margin-bottom: 10px;
+}
+
+.page-footer-nav a {
+  color: inherit;
+  line-height: 135%;
+  font-size: 16px;
+}
+
+.page-footer-nav a:hover {
+  color: $color-default-white;
+}

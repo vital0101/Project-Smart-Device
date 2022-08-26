@@ -64,13 +64,7 @@
 .navigation__user span {
   color: $color-alice-blue;
 
-    @media (max-width: $vp-1024) {
-      display: none;
-    }
-}
-
-.navigation__email {
-}
-
-.navigation__phone {
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
 }
