@@ -17,6 +17,7 @@
   position: relative;
   padding-left: 250px;
   max-width: 1220px;
+  min-height: 320px;
   margin: 0 auto;
 
   &::before {
@@ -38,11 +39,13 @@
   @media (max-width: $vp-1024) {
     padding-left: 175px;
     width: 674px;
+    min-height: 380px;
   }
 
   @media (max-width: $vp-768) {
     padding-left: 0;
     width: 100%;
+    min-height: 100%;
   }
 }
 

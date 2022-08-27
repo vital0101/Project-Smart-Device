@@ -1,0 +1,36 @@
+.services {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+}
+
+.services__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.services__wrapper h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $vp-768) {
+    display: none;
+  }
+}
+
+.services__wrapper h2 + h2 {
+  margin: 0;
+  display: none;
+
+  @media (max-width: $vp-768) {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}

@@ -1188,7 +1188,7 @@ button,
 }
 
 .about-company {
-  padding-bottom: 60px;
+  padding-top: 60px;
   padding-bottom: 100px;
 }
 
@@ -1196,6 +1196,7 @@ button,
   position: relative;
   padding-left: 250px;
   max-width: 1220px;
+  min-height: 320px;
   margin: 0 auto;
 }
 
@@ -1235,6 +1236,93 @@ button,
 
 .about-company__drop-down {
   display: none;
+}
+
+.services {
+  padding-top: 70px;
+  padding-bottom: 140px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #041827;
+}
+
+.services__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+.services__wrapper h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.services__wrapper h2 + h2 {
+  margin: 0;
+  display: none;
+}
+
+.services-card {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
+  row-gap: 85px;
+  color: #ffffff;
+}
+
+.services-card__item {
+  width: 100%;
+  min-height: 650px;
+  border: 1px solid red;
+}
+
+.services-card__item a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+.services-card__item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #00b2ff;
+  background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.services-card__item a h3 {
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 40px;
+  width: 180px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.services-card__item a img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  width: 100%;
+  height: 100%;
 }
 
 .page-footer {
@@ -1496,6 +1584,20 @@ button,
   .about-company__wrapper {
     padding-left: 175px;
     width: 674px;
+    min-height: 380px;
+  }
+
+  .services-card {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .services-card__item {
+    min-height: 350px;
   }
 
   .page-footer__wrapper {
@@ -1667,6 +1769,7 @@ button,
   .about-company__wrapper {
     padding-left: 0;
     width: 100%;
+    min-height: 100%;
   }
 
   .about-company__wrapper h2 {
@@ -1683,6 +1786,28 @@ button,
     padding: 8px 15px;
     width: 160px;
     height: 35px;
+  }
+
+  .services__wrapper h2 {
+    display: none;
+  }
+
+  .services__wrapper h2 + h2 {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services-card__item a h3 {
+    width: 130px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .services-card__item a h3 {
+    top: 30px;
+    left: 30px;
   }
 
   .page-footer {
