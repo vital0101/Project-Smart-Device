@@ -1102,7 +1102,7 @@ button,
 
 .features {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .features__wrapper {
@@ -1185,6 +1185,56 @@ button,
   fill: #00b2ff;
   width: 35px;
   height: 35px;
+}
+
+.about-company {
+  padding-bottom: 60px;
+  padding-bottom: 100px;
+}
+
+.about-company__wrapper {
+  position: relative;
+  padding-left: 250px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.about-company__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px;
+  height: 320px;
+  background-image: url("../img/2022.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-company__wrapper h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__wrapper p {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.about-company__wrapper button {
+  padding: 14px 12px;
+  min-width: 180px;
+  min-height: 45px;
+  text-align: center;
+  border: 1px solid #00b2ff;
+  color: #00b2ff;
+}
+
+.about-company__drop-down {
+  display: none;
 }
 
 .page-footer {
@@ -1411,7 +1461,7 @@ button,
 
   .features {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
 
   .features__wrapper {
@@ -1436,6 +1486,16 @@ button,
   .features__item h2 {
     font-size: 24px;
     line-height: 34px;
+  }
+
+  .about-company {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  .about-company__wrapper {
+    padding-left: 175px;
+    width: 674px;
   }
 
   .page-footer__wrapper {
@@ -1559,7 +1619,7 @@ button,
 
   .features {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
   }
 
   .features__wrapper {
@@ -1593,6 +1653,36 @@ button,
   .features__item svg {
     width: 30px;
     height: 30px;
+  }
+
+  .about-company {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+
+  .about-company__wrapper::before {
+    display: none;
+  }
+
+  .about-company__wrapper {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .about-company__wrapper h2 {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about-company__wrapper p {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .about-company__wrapper button {
+    padding: 8px 15px;
+    width: 160px;
+    height: 35px;
   }
 
   .page-footer {

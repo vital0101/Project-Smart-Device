@@ -1,0 +1,89 @@
+.about-company {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  @media (max-width: $vp-1024) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-top: 25px;
+    padding-bottom: 80px;
+  }
+}
+
+.about-company__wrapper {
+  position: relative;
+  padding-left: 250px;
+  max-width: 1220px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 320px;
+    background-image: url("../img/2022.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $vp-1024) {
+    padding-left: 175px;
+    width: 674px;
+  }
+
+  @media (max-width: $vp-768) {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.about-company__wrapper h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $ff-roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $vp-768) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about-company__wrapper p {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $vp-768) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about-company__wrapper button {
+  padding: 14px 12px;
+  min-width: 180px;
+  min-height: 45px;
+  text-align: center;
+  border: 1px solid $color-deep-sky-blue;
+  color: $color-deep-sky-blue;
+
+  @media (max-width: $vp-768) {
+    padding: 8px 15px;
+    width: 160px;
+    height: 35px;
+  }
+}
+
+.about-company__drop-down {
+  display: none;
+}
