@@ -1,0 +1,29 @@
+.feedback {
+  padding-top: 165px;
+  padding-bottom: 213px;
+  min-height: 838px;
+  background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
+
+  @media (max-width: $vp-1024) {
+    background: $color-deep-sky-blue;
+  }
+}
+
+.feedback__wrapper {
+  margin: 0 auto;
+  max-width: 1220px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+
+  @media (max-width: $vp-1024) {
+  grid-template-columns: 1fr;
+  }
+}
+
+.feedback__img {
+  margin-top: 81px;
+  @media (max-width: $vp-1024) {
+    display: none;
+  }
+}

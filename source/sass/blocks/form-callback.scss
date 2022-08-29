@@ -52,11 +52,6 @@
   }
 }
 
-// .form-callback textarea::-webkit-input-placeholder {
-//   font-family: $ff-placeholder;
-//   line-height: 22px;
-// }
-
 .form-callback__btn {
   margin-bottom: 20px;
   padding: 15px;
@@ -65,6 +60,14 @@
   text-align: center;
   color: $color-default-white;
   background-color: $color-black-pearl;
+}
+
+.form-callback__btn:focus {
+  outline: 1px solid $color-default-white   ;
+}
+
+.form-callback__btn:hover {
+  outline: 1px solid $color-default-white   ;
 }
 
 .form-callback input[type="checkbox"] {

@@ -1,0 +1,51 @@
+.accordeon__header.active + .accordeon__body {
+  @media (max-width: $vp-767) {
+    height: 100%;
+  }
+}
+
+.accordeon__header.active {
+  @media (max-width: $vp-767) {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/icon-minus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.accordeon__header {
+  @media (max-width: $vp-767) {
+    position: relative;
+    margin-bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: 15px;
+      height: 15px;
+      background-image: url("../img/icon-plus.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+.accordeon__body {
+  @media (max-width: $vp-767) {
+    height: 0;
+    overflow: hidden;
+    // transition: max-height 0.4;
+  }
+}

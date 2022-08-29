@@ -1,5 +1,5 @@
 .logo {
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     width: 35px;
     height: 35px;
   }
@@ -9,7 +9,7 @@
   width: 215px;
   height: 55px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     width: 35px;
     height: 35px;
   }

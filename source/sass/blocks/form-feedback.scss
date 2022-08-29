@@ -1,0 +1,158 @@
+.form-feedback {
+  color: $color-default-white;
+}
+
+.form-feedback__wrapper {
+  padding-right: 11px;
+}
+
+.form-feedback h2 {
+  margin: 0;
+  margin-bottom: 13px;
+  font-family: $ff-roboto-condensed;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: inherit;
+
+  @media (max-width: $vp-767) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.form-feedback p {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.form-feedback__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+
+  @media (max-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-feedback input[type="text"] {
+  margin-bottom: 20px;
+  padding: 15px 15px;
+  width: 100%;
+  border: none;
+  background-color: rgba(4, 20, 39, 0.15);
+
+  &::placeholder {
+    font-family: $ff-placeholder;
+    line-height: 22px;
+    color: $color-default-white;
+  }
+}
+
+.form-feedback textarea {
+  margin-bottom: 27px;
+  padding: 15px 15px;
+  width: 100%;
+  min-height: 155px;
+  border: none;
+  background-color: rgba(4, 20, 39, 0.15);
+
+  &::placeholder {
+    font-family: $ff-placeholder;
+    line-height: 22px;
+    color: $color-default-white;
+  }
+}
+
+.form-feedback__btn-wrapper {
+  display: flex;
+
+  @media (max-width: $vp-767) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.form-feedback__btn {
+  margin-right: 50px;
+  padding: 15px 25px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0.05em;
+  width: 265px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-default-white;
+  background-color: $color-black-pearl;
+  border-radius: 3px;
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+}
+
+.form-feedback__btn:focus,
+.form-feedback__btn:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.form-feedback__checkbox-wrapper {
+  display: flex;
+  align-self: flex-end;
+}
+
+.form-feedback input[type="checkbox"] {
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.form-feedback input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 25px;
+  display: flex;
+  align-items: center;
+  width: 220px;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid $color-default-white;
+    border-radius: 2px;
+  }
+}
+
+.form-feedback input[type="checkbox"]:focus + label::before {
+  outline: 2px solid $color-default-black;
+}
+
+.form-feedback input[type="checkbox"]:hover + label::before {
+  outline: 2px solid $color-default-black;
+}
+
+.form-feedback input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -6,14 +6,15 @@
 .hero__wrapper {
   margin: 0 auto;
   max-width: 1220px;
-  padding-top: 220px;
+  padding-top: 342px;
   padding-left: 125px;
 
   @media (max-width: $vp-1024) {
+    padding-top: 180px;
     padding-left: 0;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     padding-left: 0;
   }
 }
@@ -28,12 +29,12 @@
   text-transform: uppercase;
 
   @media (max-width: $vp-1024) {
-    margin-bottom: 20px;
+    margin-bottom: 1px;
     font-size: 64px;
     line-height: 75px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     font-size: 36px;
     line-height: 42px;
   }
@@ -49,10 +50,10 @@
   text-transform: lowercase;
 
   @media (max-width: $vp-1024) {
-    margin-bottom: 50px;
+    margin-bottom: 56px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 22px;
   }
@@ -60,6 +61,7 @@
 
 .hero a {
   display: block;
+  margin-bottom: 100px;
   padding: 15px 25px;
   width: 410px;
   min-height: 55px;
@@ -71,13 +73,14 @@
   text-transform: uppercase;
   text-align: center;
   background-color: $color-deep-sky-blue;
+  border-radius: 3px;
 
   @media (max-width: $vp-1024) {
     margin-left: 45px;
     width: 410px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     display: none;
   }
 }
@@ -85,21 +88,30 @@
 .hero a + a {
   display: none;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     display: block;
+    margin-bottom: 50px;
     margin-left: 0;
     padding: 10px 30px;
     font-size: 14px;
     line-height: 16px;
-    // font-weight: 700;
     width: 270px;
     min-height: 40px;
     letter-spacing: 0.05em;
     text-align: center;
     text-transform: uppercase;
+    border-radius: 3px;
   }
 
   @media (max-width: $vp-320) {
     width: 100%;
   }
+}
+
+.hero a:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.hero a:active {
+  outline: 1px solid $color-default-black;
 }

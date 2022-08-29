@@ -4,3 +4,29 @@
   padding: 0;
   list-style: none;
 }
+
+.social__item {
+  margin-right: 15px;
+}
+
+.social__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.social__item a:hover {
+  border: 1px solid $color-default-white;
+  border-radius: 50%;
+}
+
+.social__item a:hover svg {
+  fill: red;
+}
+
+.social__item a svg {
+  width: 30px;
+  height: 30px;
+}

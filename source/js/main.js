@@ -1,6 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {openAcc} from './modules/accordion/accordion';
+import {showMore} from './modules/show-more/show-more';
+import {isSmoothScroll} from './modules/smooth-scroll/smooth-scroll';
+import {openAcc} from './modules/accordeon/accordeon';
 
 // ---------------------------------
 
@@ -14,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  isSmoothScroll();
+  showMore();
   openAcc();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

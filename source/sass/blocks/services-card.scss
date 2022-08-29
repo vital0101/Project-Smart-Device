@@ -46,6 +46,14 @@
   }
 }
 
+.services-card__item a:hover {
+  outline: 1px solid $color-default-white;
+}
+
+.services-card__item a:active {
+  outline: 1px solid $color-deep-sky-blue;
+}
+
 .services-card__item a h3 {
   margin: 0;
   position: absolute;
@@ -55,13 +63,13 @@
   font-size: 20px;
   line-height: 30px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     width: 130px;
     font-size: 18px;
     line-height: 30px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     top: 30px;
     left: 30px;
   }

@@ -7,7 +7,7 @@
     padding-bottom: 80px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     padding-top: 25px;
     padding-bottom: 80px;
   }
@@ -42,7 +42,7 @@
     min-height: 380px;
   }
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     padding-left: 0;
     width: 100%;
     min-height: 100%;
@@ -51,12 +51,12 @@
 
 .about-company__wrapper h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-family: $ff-roboto-condensed;
   font-size: 36px;
   line-height: 51px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     font-size: 28px;
     line-height: 39px;
   }
@@ -66,13 +66,14 @@
   margin: 0;
   margin-bottom: 20px;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     font-size: 14px;
     line-height: 19px;
   }
 }
 
 .about-company__wrapper button {
+  margin-top: 18px;
   padding: 14px 12px;
   min-width: 180px;
   min-height: 45px;
@@ -80,13 +81,21 @@
   border: 1px solid $color-deep-sky-blue;
   color: $color-deep-sky-blue;
 
-  @media (max-width: $vp-768) {
+  @media (max-width: $vp-767) {
     padding: 8px 15px;
     width: 160px;
     height: 35px;
   }
 }
 
-.about-company__drop-down {
-  display: none;
+.about-company .about-company__drop-down-btn:focus {
+  border: 1px solid $color-black-pearl;
+}
+
+.about-company .about-company__drop-down-btn:hover {
+  border: 1px solid $color-black-pearl;
+}
+
+.about-company .about-company__drop-down-btn:active {
+  border: 1px solid $color-deep-sky-blue;
 }
