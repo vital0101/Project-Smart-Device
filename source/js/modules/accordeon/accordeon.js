@@ -1,46 +1,26 @@
-// const accordeonEl = Array.from(document.querySelectorAll('.accordeon__header'));
+document.querySelector('.page-footer__nav-wrapper').classList.add('accordion');
+document.querySelector('.page-footer__nav-wrapper h2').classList.add('accordion__header');
+document.querySelector('.page-footer__contacts-wrapper').classList.add('accordion');
+document.querySelector('.page-footer__contacts-wrapper h2').classList.add('accordion__header');
+document.querySelector('.page-footer__nav-col-wrapper').classList.add('accordion__content');
+document.querySelector('.page-footer__contacts').classList.add('accordion__content');
 
-
-// const openAcc = () => {
-//   accordeonEl.forEach(function (section) {
-//     section.addEventListener('click', function (evt) {
-//       accordeonEl.forEach(function (el) {
-//         if (el.classList.contains === 'opened' && el.classList.contains === 'active') {
-//           el.classList.remove('opened');
-//           el.classList.remove('active');
-//         } else {
-//           el.classList.add('opened');
-//           el.classList.add('active');
-//         }
-//         // el.classList.toggle('opened');
-//         // el.classList.toggle('active');
-//         // evt.currentTarget.classList.add('active');
-//         // evt.currentTarget.classList.add('opened');
-//       });
-//       evt.currentTarget.classList.toggle('active');
-//       evt.currentTarget.classList.toggle('opened');
-//     });
-//   });
-// };
-
-const accordeons = document.querySelectorAll('.accordeon__header');
-
-function hendler() {
-  if (this.classList.contains('active')) {
-    this.classList.remove('active');
-  } else {
-    for (const el of accordeons) {
-      el.classList.remove('active');
-    }
-    this.classList.add('active');
-  }
-}
+const accordions = document.querySelectorAll('.accordion');
 
 const openAcc = () => {
-  for (const item of accordeons) {
-    // console.log(item);
-    item.addEventListener('click', hendler);
-  }
+  accordions.forEach(function (section) {
+    section.addEventListener('click', function (e) {
+      let acc = e.target.closest('.accordion');
+      if (acc.classList.contains('active')) {
+        acc.classList.remove('active');
+      } else {
+        accordions.forEach(function (el) {
+          el.classList.remove('active');
+        });
+        acc.classList.add('active');
+      }
+    });
+  });
 };
 
 export {openAcc};

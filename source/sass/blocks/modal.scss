@@ -57,10 +57,12 @@
   }
 
   &__content {
-    position: relative;
+    position: absolute;
+    top: 146px;
 
     width: 500px;
     padding: 40px;
+    padding-top: 38px;
 
     background-color: $color-deep-sky-blue;
 

@@ -5,6 +5,11 @@
   font-weight: 400;
   color: $color-default-white;
   background-color: $color-black-pearl;
+
+  @media (max-width: $vp-767) {
+    padding-top: 47px;
+    padding-bottom: 86px;
+  }
 }
 
 .services__wrapper {
@@ -29,8 +34,9 @@
 
   @media (max-width: $vp-767) {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     font-size: 28px;
+    font-weight: 400;
     line-height: 39px;
   }
 }

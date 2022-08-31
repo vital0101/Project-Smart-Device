@@ -744,9 +744,11 @@ button,
 }
 
 .modal__content {
-  position: relative;
+  position: absolute;
+  top: 146px;
   width: 500px;
   padding: 40px;
+  padding-top: 38px;
   background-color: #00b2ff;
 }
 
@@ -795,9 +797,9 @@ button,
 .hero-header-wrapper {
   min-height: 880px;
   background-color: #041827;
+  background-image: url("../img/content/promo-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/content/promo-desktop.jpg");
 }
 
 .page-header {
@@ -858,9 +860,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   width: 855px;
 }
 
@@ -926,7 +925,7 @@ button,
 
 .form-callback h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -938,7 +937,8 @@ button,
   line-height: 22px;
 }
 
-.form-callback input[type="text"] {
+.form-callback input[type="text"],
+.form-callback input[type="number"] {
   margin-bottom: 20px;
   padding: 15px;
   width: 100%;
@@ -948,31 +948,36 @@ button,
   background-color: rgba(4, 20, 39, 0.15);
 }
 
-.form-callback input[type="text"]::-webkit-input-placeholder {
+.form-callback input[type="text"]::-webkit-input-placeholder,
+.form-callback input[type="number"]::-webkit-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-callback input[type="text"]::-moz-placeholder {
+.form-callback input[type="text"]::-moz-placeholder,
+.form-callback input[type="number"]::-moz-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-callback input[type="text"]:-ms-input-placeholder {
+.form-callback input[type="text"]:-ms-input-placeholder,
+.form-callback input[type="number"]:-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-callback input[type="text"]::-ms-input-placeholder {
+.form-callback input[type="text"]::-ms-input-placeholder,
+.form-callback input[type="number"]::-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-callback input[type="text"]::placeholder {
+.form-callback input[type="text"]::placeholder,
+.form-callback input[type="number"]::placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
@@ -1019,7 +1024,7 @@ button,
 }
 
 .form-callback__btn {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 15px;
   width: 100%;
   line-height: 19px;
@@ -1043,15 +1048,18 @@ button,
 }
 
 .form-callback input[type="checkbox"] + label {
-  padding-left: 30px;
+  padding-left: 33px;
+  font-family: "PTMono", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
   cursor: pointer;
 }
 
 .form-callback input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  bottom: 45px;
-  left: 41px;
+  bottom: 43px;
+  left: 48px;
   margin-right: 10px;
   width: 15px;
   height: 15px;
@@ -1262,20 +1270,33 @@ button,
   padding: 14px 12px;
   min-width: 180px;
   min-height: 45px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   text-align: center;
   border: 1px solid #00b2ff;
   color: #00b2ff;
 }
 
-.about-company .about-company__drop-down-btn:focus {
+.about-company__drop-down {
+  height: 230px;
+  overflow-y: hidden;
+}
+
+.about-company__drop-down.show-more {
+  height: 100%;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.about-company .about-company__btn:focus {
   border: 1px solid #041827;
 }
 
-.about-company .about-company__drop-down-btn:hover {
+.about-company .about-company__btn:hover {
   border: 1px solid #041827;
 }
 
-.about-company .about-company__drop-down-btn:active {
+.about-company .about-company__btn:active {
   border: 1px solid #00b2ff;
 }
 
@@ -1318,6 +1339,8 @@ button,
   column-gap: 85px;
   row-gap: 85px;
   color: #ffffff;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
 }
 
 .services-card__item {
@@ -1361,6 +1384,7 @@ button,
   left: 40px;
   width: 180px;
   font-size: 20px;
+  font-weight: 400;
   line-height: 30px;
 }
 
@@ -1375,10 +1399,6 @@ button,
 
 .form-feedback {
   color: #ffffff;
-}
-
-.form-feedback__wrapper {
-  padding-right: 11px;
 }
 
 .form-feedback h2 {
@@ -1407,7 +1427,8 @@ button,
   column-gap: 30px;
 }
 
-.form-feedback input[type="text"] {
+.form-feedback input[type="text"],
+.form-feedback input[type="number"] {
   margin-bottom: 20px;
   padding: 15px 15px;
   width: 100%;
@@ -1415,31 +1436,36 @@ button,
   background-color: rgba(4, 20, 39, 0.15);
 }
 
-.form-feedback input[type="text"]::-webkit-input-placeholder {
+.form-feedback input[type="text"]::-webkit-input-placeholder,
+.form-feedback input[type="number"]::-webkit-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-feedback input[type="text"]::-moz-placeholder {
+.form-feedback input[type="text"]::-moz-placeholder,
+.form-feedback input[type="number"]::-moz-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-feedback input[type="text"]:-ms-input-placeholder {
+.form-feedback input[type="text"]:-ms-input-placeholder,
+.form-feedback input[type="number"]:-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-feedback input[type="text"]::-ms-input-placeholder {
+.form-feedback input[type="text"]::-ms-input-placeholder,
+.form-feedback input[type="number"]::-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
-.form-feedback input[type="text"]::placeholder {
+.form-feedback input[type="text"]::placeholder,
+.form-feedback input[type="number"]::placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
@@ -1572,8 +1598,8 @@ button,
   padding-top: 165px;
   padding-bottom: 213px;
   min-height: 838px;
-  background: -o-linear-gradient(311deg, #036594 34%, #00b2ff 34%);
-  background: linear-gradient(139deg, #036594 34%, #00b2ff 34%);
+  background-image: url("../img/content/fon.png");
+  background-size: cover;
 }
 
 .feedback__wrapper {
@@ -1590,6 +1616,10 @@ button,
 
 .feedback__img {
   margin-top: 81px;
+}
+
+.feedback__form-wrapper {
+  padding-right: 10px;
 }
 
 .page-footer {
@@ -1616,14 +1646,13 @@ button,
 }
 
 .page-footer__nav-wrapper {
-  width: 470px;
+  max-width: 470px;
   margin-right: 30px;
 }
 
 .page-footer__nav-wrapper h2,
 .page-footer__contacts-wrapper h2 {
   margin: 0;
-  margin-bottom: 20px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   line-height: 16px;
@@ -1703,6 +1732,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -1731,10 +1762,6 @@ button,
   border-radius: 50%;
 }
 
-.social__item a:hover svg {
-  fill: red;
-}
-
 .social__item a svg {
   width: 30px;
   height: 30px;
@@ -1760,7 +1787,11 @@ button,
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+  .container {
+    padding: 0 50px;
+  }
+
   .hero-header-wrapper {
     min-height: 640px;
     background-image: url("../img/content/promo-tablet.jpg");
@@ -1775,8 +1806,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding-right: 46px;
-    padding-left: 26px;
+    padding-right: 20px;
   }
 
   .page-header__btn {
@@ -1791,17 +1821,12 @@ button,
   }
 
   .navigation__logo {
-    margin-top: 10px;
     margin-right: 50px;
   }
 
   .navigation__user {
-    margin-top: -5px;
+    margin-top: -15px;
     width: 100px;
-  }
-
-  .navigation__user {
-    margin-top: 0;
   }
 
   .navigation__user a {
@@ -1889,6 +1914,10 @@ button,
     min-height: 380px;
   }
 
+  .about-company__drop-down {
+    height: 340px;
+  }
+
   .services-card {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -1900,6 +1929,12 @@ button,
 
   .services-card__item {
     min-height: 350px;
+  }
+
+  .services-card__item a h3 {
+    width: 130px;
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .feedback {
@@ -1975,15 +2010,10 @@ button,
   }
 }
 
-@media (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1024px) and (min-resolution: 2dppx) {
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/promo-tablet@2x.jpg");
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    padding: 0 50px;
+    background-size: 1540px auto;
   }
 }
 
@@ -2032,12 +2062,16 @@ button,
   }
 
   .page-header__wrapper {
-    padding-left: 9px;
-    padding-right: 20px;
+    padding-left: 0;
+    padding-right: 10px;
   }
 
   .navigation__logo {
     margin-top: 5px;
+  }
+
+  .navigation__user {
+    margin-top: 0;
   }
 
   .logo {
@@ -2051,15 +2085,17 @@ button,
   }
 
   .hero__wrapper {
-    padding-left: 0;
+    padding-top: 150px;
   }
 
   .hero h2 {
+    margin-bottom: 7px;
     font-size: 36px;
     line-height: 42px;
   }
 
   .hero p {
+    margin-bottom: 45px;
     font-size: 14px;
     line-height: 22px;
   }
@@ -2138,9 +2174,23 @@ button,
   }
 
   .about-company__wrapper button {
-    padding: 8px 15px;
-    width: 160px;
-    height: 35px;
+    margin-top: 13px;
+    padding: 0;
+    min-width: 160px;
+    min-height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+  }
+
+  .about-company__drop-down {
+    height: 260px;
+  }
+
+  .services {
+    padding-top: 47px;
+    padding-bottom: 86px;
   }
 
   .services__wrapper h2 {
@@ -2149,23 +2199,28 @@ button,
 
   .services__wrapper h2 + h2 {
     display: block;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     font-size: 28px;
+    font-weight: 400;
     line-height: 39px;
   }
 
-  .services-card__item a h3 {
-    width: 130px;
-    font-size: 18px;
-    line-height: 30px;
+  .services-card__item {
+    min-height: 250px;
+  }
+
+  .services-card__item a::after {
+    width: 40px;
+    height: 40px;
   }
 
   .services-card__item a h3 {
-    top: 30px;
+    top: 25px;
     left: 30px;
   }
 
   .form-feedback h2 {
+    margin-bottom: 7px;
     font-size: 30px;
     line-height: 42px;
   }
@@ -2173,6 +2228,10 @@ button,
   .form-feedback p {
     font-size: 14px;
     line-height: 19px;
+  }
+
+  .form-feedback textarea {
+    min-height: 180px;
   }
 
   .form-feedback__btn-wrapper {
@@ -2187,7 +2246,19 @@ button,
 
   .form-feedback__btn {
     margin-bottom: 25px;
+    padding: 13px 25px;
     width: 100%;
+  }
+
+  .form-feedback__checkbox-wrapper {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+
+  .feedback {
+    padding-top: 47px;
+    padding-bottom: 30px;
+    min-height: 750px;
   }
 
   .page-footer {
@@ -2209,6 +2280,7 @@ button,
 
   .page-footer__logo-social-wrapper {
     position: relative;
+    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2237,11 +2309,15 @@ button,
     margin-bottom: 15px;
   }
 
+  .page-footer__social {
+    margin-left: 19px;
+  }
+
   .page-footer__nav-wrapper {
     position: relative;
     margin-right: 0;
-    padding: 20px 0;
-    width: 100%;
+    padding: 22px 0;
+    max-width: 100%;
   }
 
   .page-footer__nav-wrapper::after {
@@ -2254,9 +2330,25 @@ button,
     background-color: rgba(248, 253, 255, 0.7);
   }
 
+  .page-footer__nav-wrapper h2,
+  .page-footer__contacts-wrapper h2 {
+    margin-bottom: 20px;
+  }
+
+  .page-footer__nav-wrapper.accordion h2,
+  .page-footer__contacts-wrapper.accordion h2 {
+    margin-bottom: 0;
+  }
+
+  .page-footer__nav-wrapper.accordion.active h2,
+  .page-footer__contacts-wrapper.accordion.active h2 {
+    margin-bottom: 20px;
+  }
+
   .page-footer__contacts-wrapper {
     position: relative;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .page-footer__contacts-wrapper::after {
@@ -2269,20 +2361,38 @@ button,
     background-color: rgba(248, 253, 255, 0.7);
   }
 
-  .accordeon__header.active + .accordeon__body {
-    height: 100%;
+  .page-footer__contacts-wrapper address {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 19px;
   }
 
-  .accordeon__header.active {
+  .page-footer__contacts-wrapper a {
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .social__item a svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion.active .accordion__content {
+    -webkit-transition: max-height 0.4s ease-in;
+    -o-transition: max-height 0.4s ease-in;
+    transition: max-height 0.4s ease-in;
+    max-height: 100%;
+  }
+
+  .accordion.active .accordion__header {
     position: relative;
-    margin-bottom: 20px;
   }
 
-  .accordeon__header.active::after {
+  .accordion.active .accordion__header::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 3px;
     width: 15px;
     height: 15px;
     background-image: url("../img/icon-minus.svg");
@@ -2290,16 +2400,16 @@ button,
     background-position: center;
   }
 
-  .accordeon__header {
+  .accordion__header {
     position: relative;
     margin-bottom: 0;
   }
 
-  .accordeon__header::after {
+  .accordion__header::after {
     content: "";
     position: absolute;
     top: 0;
-    right: 10px;
+    right: 0;
     width: 15px;
     height: 15px;
     background-image: url("../img/icon-plus.svg");
@@ -2307,8 +2417,8 @@ button,
     background-position: center;
   }
 
-  .accordeon__body {
-    height: 0;
+  .accordion__content {
+    max-height: 0;
     overflow: hidden;
   }
 }
@@ -2327,11 +2437,13 @@ button,
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 320px) and (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/promo-mobile@2x.jpg");
+    background-size: 640px auto;
   }
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/promo-desktop@2x.jpg");
+    background-size: 3840px auto;
   }
 }

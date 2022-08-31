@@ -8,7 +8,7 @@
 
 .form-callback h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 3px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -20,7 +20,8 @@
   line-height: 22px;
 }
 
-.form-callback input[type="text"] {
+.form-callback input[type="text"],
+.form-callback input[type="number"] {
   margin-bottom: 20px;
   padding: 15px;
   width: 100%;
@@ -53,7 +54,7 @@
 }
 
 .form-callback__btn {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding: 15px;
   width: 100%;
   line-height: 19px;
@@ -63,11 +64,11 @@
 }
 
 .form-callback__btn:focus {
-  outline: 1px solid $color-default-white   ;
+  outline: 1px solid $color-default-white;
 }
 
 .form-callback__btn:hover {
-  outline: 1px solid $color-default-white   ;
+  outline: 1px solid $color-default-white;
 }
 
 .form-callback input[type="checkbox"] {
@@ -77,14 +78,17 @@
 }
 
 .form-callback input[type="checkbox"] + label {
-  padding-left: 30px;
+  padding-left: 33px;
+  font-family: $ff-placeholder;
+  font-size: 14px;
+  line-height: 16px;
   cursor: pointer;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 45px;
-    left: 41px;
+    bottom: 43px;
+    left: 48px;
     margin-right: 10px;
     width: 15px;
     height: 15px;

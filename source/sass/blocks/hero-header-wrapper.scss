@@ -1,20 +1,22 @@
 .hero-header-wrapper {
   min-height: 880px;
   background-color: $color-black-pearl;
+  background-image: url("../img/content/promo-desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("../img/content/promo-desktop.jpg");
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/content/promo-desktop@2x.jpg");
+    background-size: 3840px auto;
   }
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     min-height: 640px;
     background-image: url("../img/content/promo-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/promo-tablet@2x.jpg");
+      background-size: 1540px auto;
     }
   }
 
@@ -24,6 +26,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/content/promo-mobile@2x.jpg");
+      background-size: 640px auto;
     }
   }
 }

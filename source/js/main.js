@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {showMore} from './modules/show-more/show-more';
 import {isSmoothScroll} from './modules/smooth-scroll/smooth-scroll';
 import {openAcc} from './modules/accordeon/accordeon';
+import {showMaskTel} from './modules/mask-for-tel/mask-for-tel';
 
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
   isSmoothScroll();
   showMore();
   openAcc();
+  showMaskTel();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

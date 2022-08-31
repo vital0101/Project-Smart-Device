@@ -2,10 +2,18 @@
   padding-top: 165px;
   padding-bottom: 213px;
   min-height: 838px;
-  background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
+  // background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
+  background-image: url("../img/content/fon.png");
+  background-size: cover;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     background: $color-deep-sky-blue;
+  }
+
+  @media (max-width: $vp-767) {
+    padding-top: 47px;
+    padding-bottom: 30px;
+    min-height: 750px;
   }
 }
 
@@ -16,14 +24,19 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
 
-  @media (max-width: $vp-1024) {
-  grid-template-columns: 1fr;
+  @media (max-width: $vp-1023) {
+    grid-template-columns: 1fr;
   }
 }
 
 .feedback__img {
   margin-top: 81px;
-  @media (max-width: $vp-1024) {
+
+  @media (max-width: $vp-1023) {
     display: none;
   }
+}
+
+.feedback__form-wrapper {
+  padding-right: 10px;
 }

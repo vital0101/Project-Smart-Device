@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 100px;
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     padding-top: 40px;
     padding-bottom: 80px;
   }
@@ -36,7 +36,7 @@
     }
   }
 
-  @media (max-width: $vp-1024) {
+  @media (max-width: $vp-1023) {
     padding-left: 175px;
     width: 674px;
     min-height: 380px;
@@ -77,25 +77,49 @@
   padding: 14px 12px;
   min-width: 180px;
   min-height: 45px;
+  font-family: $ff-roboto-condensed;
   text-align: center;
   border: 1px solid $color-deep-sky-blue;
   color: $color-deep-sky-blue;
 
   @media (max-width: $vp-767) {
-    padding: 8px 15px;
-    width: 160px;
-    height: 35px;
+    margin-top: 13px;
+    padding: 0;
+    min-width: 160px;
+    min-height: 35px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.05em;
   }
 }
 
-.about-company .about-company__drop-down-btn:focus {
+.about-company__drop-down {
+  height: 230px;
+  overflow-y: hidden;
+
+  @media (max-width: $vp-1023) {
+    height: 340px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 260px;
+  }
+}
+
+.about-company__drop-down.show-more {
+  height: 100%;
+  transition: 0.3s ease-in;
+}
+
+.about-company .about-company__btn:focus {
   border: 1px solid $color-black-pearl;
 }
 
-.about-company .about-company__drop-down-btn:hover {
+.about-company .about-company__btn:hover {
   border: 1px solid $color-black-pearl;
 }
 
-.about-company .about-company__drop-down-btn:active {
+.about-company .about-company__btn:active {
   border: 1px solid $color-deep-sky-blue;
 }
