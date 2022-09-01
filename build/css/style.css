@@ -938,7 +938,7 @@ button,
 }
 
 .form-callback input[type="text"],
-.form-callback input[type="number"] {
+.form-callback input[type="tel"] {
   margin-bottom: 20px;
   padding: 15px;
   width: 100%;
@@ -949,35 +949,35 @@ button,
 }
 
 .form-callback input[type="text"]::-webkit-input-placeholder,
-.form-callback input[type="number"]::-webkit-input-placeholder {
+.form-callback input[type="tel"]::-webkit-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-callback input[type="text"]::-moz-placeholder,
-.form-callback input[type="number"]::-moz-placeholder {
+.form-callback input[type="tel"]::-moz-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-callback input[type="text"]:-ms-input-placeholder,
-.form-callback input[type="number"]:-ms-input-placeholder {
+.form-callback input[type="tel"]:-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-callback input[type="text"]::-ms-input-placeholder,
-.form-callback input[type="number"]::-ms-input-placeholder {
+.form-callback input[type="tel"]::-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-callback input[type="text"]::placeholder,
-.form-callback input[type="number"]::placeholder {
+.form-callback input[type="tel"]::placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
@@ -1041,6 +1041,10 @@ button,
   outline: 1px solid #ffffff;
 }
 
+.form-callback__checkbox-wrapper {
+  position: relative;
+}
+
 .form-callback input[type="checkbox"] {
   width: 0;
   height: 0;
@@ -1048,6 +1052,7 @@ button,
 }
 
 .form-callback input[type="checkbox"] + label {
+  position: relative;
   padding-left: 33px;
   font-family: "PTMono", "Arial", sans-serif;
   font-size: 14px;
@@ -1058,8 +1063,8 @@ button,
 .form-callback input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
-  bottom: 43px;
-  left: 48px;
+  top: 2px;
+  left: 6px;
   margin-right: 10px;
   width: 15px;
   height: 15px;
@@ -1077,6 +1082,49 @@ button,
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form-callback__checkbox-wrapper span {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -19px;
+  padding: 8px 8px 8px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: #f2f5f6;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.form-callback__checkbox-wrapper span::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 19px;
+  width: 15px;
+  height: 15px;
+  background-color: #f2f5f6;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-callback__checkbox-wrapper span::after {
+  content: "!";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffa500;
+  color: #f2f5f6;
+  text-align: center;
+}
+
+.form-callback input[type="checkbox"]:checked + label + span {
+  display: none;
 }
 
 .hero {
@@ -1428,7 +1476,7 @@ button,
 }
 
 .form-feedback input[type="text"],
-.form-feedback input[type="number"] {
+.form-feedback input[type="tel"] {
   margin-bottom: 20px;
   padding: 15px 15px;
   width: 100%;
@@ -1437,35 +1485,35 @@ button,
 }
 
 .form-feedback input[type="text"]::-webkit-input-placeholder,
-.form-feedback input[type="number"]::-webkit-input-placeholder {
+.form-feedback input[type="tel"]::-webkit-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-feedback input[type="text"]::-moz-placeholder,
-.form-feedback input[type="number"]::-moz-placeholder {
+.form-feedback input[type="tel"]::-moz-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-feedback input[type="text"]:-ms-input-placeholder,
-.form-feedback input[type="number"]:-ms-input-placeholder {
+.form-feedback input[type="tel"]:-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-feedback input[type="text"]::-ms-input-placeholder,
-.form-feedback input[type="number"]::-ms-input-placeholder {
+.form-feedback input[type="tel"]::-ms-input-placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
 }
 
 .form-feedback input[type="text"]::placeholder,
-.form-feedback input[type="number"]::placeholder {
+.form-feedback input[type="tel"]::placeholder {
   font-family: "PTMono", "Arial", sans-serif;
   line-height: 22px;
   color: #ffffff;
@@ -1537,6 +1585,7 @@ button,
 }
 
 .form-feedback__checkbox-wrapper {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1580,6 +1629,45 @@ button,
   border-radius: 2px;
 }
 
+.form-feedback__checkbox-wrapper span {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -19px;
+  padding: 8px 8px 8px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: #f2f5f6;
+  border-radius: 5px;
+  color: #000000;
+}
+
+.form-feedback__checkbox-wrapper span::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 19px;
+  width: 15px;
+  height: 15px;
+  background-color: #f2f5f6;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form-feedback__checkbox-wrapper span::after {
+  content: "!";
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  width: 20px;
+  height: 20px;
+  background-color: #ffa500;
+  color: #f2f5f6;
+  text-align: center;
+}
+
 .form-feedback input[type="checkbox"]:focus + label::before {
   outline: 2px solid #000000;
 }
@@ -1592,6 +1680,10 @@ button,
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form-feedback input[type="checkbox"]:checked + label + span {
+  display: none;
 }
 
 .feedback {
@@ -1653,6 +1745,7 @@ button,
 .page-footer__nav-wrapper h2,
 .page-footer__contacts-wrapper h2 {
   margin: 0;
+  margin-bottom: 20px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   line-height: 16px;
@@ -2332,7 +2425,7 @@ button,
 
   .page-footer__nav-wrapper h2,
   .page-footer__contacts-wrapper h2 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 
   .page-footer__nav-wrapper.accordion h2,

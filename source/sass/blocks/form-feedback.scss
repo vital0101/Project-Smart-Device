@@ -41,7 +41,7 @@
 }
 
 .form-feedback input[type="text"],
-.form-feedback input[type="number"] {
+.form-feedback input[type="tel"] {
   margin-bottom: 20px;
   padding: 15px 15px;
   width: 100%;
@@ -110,6 +110,7 @@
 }
 
 .form-feedback__checkbox-wrapper {
+  position: relative;
   display: flex;
   align-self: flex-end;
 
@@ -150,6 +151,44 @@
   }
 }
 
+.form-feedback__checkbox-wrapper span {
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -19px;
+  padding: 8px 8px 8px 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  background-color: $color-alice-blue;
+  border-radius: 5px;
+  color: $color-default-black;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 19px;
+    width: 15px;
+    height: 15px;
+    background-color: $color-alice-blue;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    content: "!";
+    position: absolute;
+    top: 8px;
+    left: 9px;
+    width: 20px;
+    height: 20px;
+    background-color: $color-orange;
+    color: $color-alice-blue;
+    text-align: center;
+  }
+}
+
+
 .form-feedback input[type="checkbox"]:focus + label::before {
   outline: 2px solid $color-default-black;
 }
@@ -162,4 +201,8 @@
   background-image: url("../img/checkbox.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.form-feedback input[type="checkbox"]:checked + label + span {
+  display: none;
 }
