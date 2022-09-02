@@ -21,13 +21,14 @@
 }
 
 .navigation__user {
+  margin-top: 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 500px;
+  width: 525px;
 
   @media (max-width: $vp-1023) {
-    margin-top: -15px;
+    margin-top: 0;
     width: 100px;
   }
 

@@ -2,6 +2,7 @@
   @media (max-width: $vp-767) {
     transition: max-height 0.4s ease-in;
     max-height: 100%;
+    display: flex;
   }
 }
 
@@ -12,8 +13,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 3px;
+      top: -2px;
+      right: 2px;
       width: 15px;
       height: 15px;
       background-image: url("../img/icon-minus.svg");
@@ -26,13 +27,12 @@
 .accordion__header {
   @media (max-width: $vp-767) {
     position: relative;
-    margin-bottom: 0;
 
     &::after {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -2px;
+      right: 2px;
       width: 15px;
       height: 15px;
       background-image: url("../img/icon-plus.svg");
@@ -46,5 +46,6 @@
   @media (max-width: $vp-767) {
     max-height: 0;
     overflow: hidden;
+    display: none;
   }
 }

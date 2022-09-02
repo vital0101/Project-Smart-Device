@@ -12,6 +12,10 @@
   line-height: 51px;
   color: inherit;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 7px;
+  }
+
   @media (max-width: $vp-767) {
     margin-bottom: 7px;
     font-size: 30px;
@@ -23,7 +27,12 @@
   margin: 0;
   margin-bottom: 35px;
 
+  @media (max-width: $vp-1023) {
+    margin-bottom: 25px;
+  }
+
   @media (max-width: $vp-767) {
+    margin-bottom: 36px;
     font-size: 14px;
     line-height: 19px;
   }
@@ -57,13 +66,19 @@
 
 .form-feedback textarea {
   margin-bottom: 27px;
-  padding: 15px 15px;
+  padding: 24px 15px;
   width: 100%;
   min-height: 155px;
   border: none;
   background-color: rgba(4, 20, 39, 0.15);
 
+  @media (max-width: $vp-1023) {
+    padding-top: 29px;
+  }
+
   @media (max-width: $vp-767) {
+    margin-bottom: 26px;
+    padding-top: 25px;
     min-height: 180px;
   }
 
@@ -97,6 +112,10 @@
   background-color: $color-black-pearl;
   border-radius: 3px;
 
+  @media (max-width: $vp-1023) {
+    margin-right: 85px;
+  }
+
   @media (max-width: $vp-767) {
     margin-bottom: 25px;
     padding: 13px 25px;
@@ -115,6 +134,7 @@
   align-self: flex-end;
 
   @media (max-width: $vp-767) {
+    margin-left: 5px;
     align-self: flex-start;
   }
 }

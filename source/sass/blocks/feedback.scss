@@ -2,11 +2,13 @@
   padding-top: 165px;
   padding-bottom: 213px;
   min-height: 838px;
-  // background: linear-gradient(139deg, $color-cerulean 34%, $color-deep-sky-blue 34%);
   background-image: url("../img/content/fon.png");
   background-size: cover;
 
   @media (max-width: $vp-1023) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    min-height: 580px;
     background: $color-deep-sky-blue;
   }
 
@@ -39,4 +41,8 @@
 
 .feedback__form-wrapper {
   padding-right: 10px;
+
+  @media (max-width: $vp-1023) {
+    padding-right: 0;
+  }
 }
