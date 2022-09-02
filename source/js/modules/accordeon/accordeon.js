@@ -1,7 +1,7 @@
 document.querySelector('.page-footer__nav-wrapper').classList.add('accordion');
-document.querySelector('.page-footer__nav-wrapper h2').classList.add('accordion__header');
+document.querySelector('.page-footer__nav-header').classList.add('accordion__header');
 document.querySelector('.page-footer__contacts-wrapper').classList.add('accordion');
-document.querySelector('.page-footer__contacts-wrapper h2').classList.add('accordion__header');
+document.querySelector('.page-footer__contacts-header').classList.add('accordion__header');
 document.querySelector('.page-footer__nav-col-wrapper').classList.add('accordion__content');
 document.querySelector('.page-footer__contacts').classList.add('accordion__content');
 

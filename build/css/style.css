@@ -1050,6 +1050,9 @@ button,
   width: 0;
   height: 0;
   margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form-callback input[type="checkbox"] + label {
@@ -1597,6 +1600,9 @@ button,
   width: 0;
   height: 0;
   margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .form-feedback input[type="checkbox"] + label {
@@ -1730,7 +1736,12 @@ button,
 
 .page-footer__logo-social-wrapper {
   margin-left: 10px;
-  margin-right: 160px;
+  margin-right: 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .page-footer__logo {
@@ -1743,9 +1754,10 @@ button,
   max-width: 470px;
 }
 
-.page-footer__nav-wrapper h2,
-.page-footer__contacts-wrapper h2 {
+.page-footer__nav-header h2,
+.page-footer__contacts-header h2 {
   margin: 0;
+  margin-bottom: 20px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   line-height: 16px;
@@ -2171,10 +2183,6 @@ button,
     line-height: 19px;
   }
 
-  .about-company__wrapper::before {
-    display: none;
-  }
-
   .form-feedback__input-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2305,6 +2313,10 @@ button,
   .about-company {
     padding-top: 25px;
     padding-bottom: 77px;
+  }
+
+  .about-company__wrapper::before {
+    display: none;
   }
 
   .about-company__wrapper {
@@ -2487,8 +2499,14 @@ button,
     background-color: rgba(248, 253, 255, 0.7);
   }
 
-  .page-footer__nav-wrapper.accordion h2,
-  .page-footer__contacts-wrapper.accordion h2 {
+  .page-footer__nav-header,
+  .page-footer__contacts-header {
+    padding-top: 21px;
+    padding-bottom: 23px;
+  }
+
+  .page-footer__nav-header h2,
+  .page-footer__contacts-header h2 {
     margin-bottom: 0;
   }
 
@@ -2537,7 +2555,6 @@ button,
     -webkit-transition: max-height 0.4s ease-in;
     -o-transition: max-height 0.4s ease-in;
     transition: max-height 0.4s ease-in;
-    max-height: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2550,7 +2567,7 @@ button,
   .accordion.active .accordion__header::after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 20px;
     right: 2px;
     width: 15px;
     height: 15px;
@@ -2566,7 +2583,7 @@ button,
   .accordion__header::after {
     content: "";
     position: absolute;
-    top: -2px;
+    top: 20px;
     right: 2px;
     width: 15px;
     height: 15px;
@@ -2576,8 +2593,6 @@ button,
   }
 
   .accordion__content {
-    max-height: 0;
-    overflow: hidden;
     display: none;
   }
 }
@@ -2602,11 +2617,5 @@ button,
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/promo-desktop@2x.jpg");
-  }
-}
-
-@media (max-height: 767px) {
-  .page-footer__header-wrapper {
-    padding: 22px 0;
   }
 }
