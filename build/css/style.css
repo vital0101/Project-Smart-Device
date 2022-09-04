@@ -1349,15 +1349,15 @@ button,
   color: #00b2ff;
 }
 
-.about-company__drop-down-btn:focus {
+.about-company__drop-down-btn-js:focus {
   border: 1px solid #041827;
 }
 
-.about-company__drop-down-btn:hover {
+.about-company__drop-down-btn-js:hover {
   border: 1px solid #041827;
 }
 
-.about-company__drop-down-btn:active {
+.about-company__drop-down-btn-js:active {
   border: 1px solid #00b2ff;
 }
 
@@ -1406,6 +1406,7 @@ button,
 .services-card__item {
   width: 100%;
   min-height: 650px;
+  background-color: #86a1bf;
 }
 
 .services-card__item a {
@@ -1855,6 +1856,7 @@ button,
   margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 210px;
 }
 
 .social__item:not(:last-child) {
@@ -2134,12 +2136,12 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
     grid-column: 1 / -1;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -2148,6 +2150,11 @@ button,
 
   .page-footer__logo {
     margin-bottom: 0;
+  }
+
+  .page-footer__social {
+    margin-top: 10px;
+    margin-left: 0;
   }
 
   .page-footer__nav-wrapper {
@@ -2487,6 +2494,7 @@ button,
   }
 
   .page-footer__social {
+    margin-top: 0;
     margin-left: 0;
   }
 
@@ -2614,6 +2622,7 @@ button,
 
   .hero a + a {
     width: 100%;
+    padding: 12px 20px;
   }
 }
 
