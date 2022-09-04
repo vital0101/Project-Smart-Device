@@ -1,7 +1,10 @@
 const dropDownText = document.querySelector('.about-company__drop-down');
 const btnDropDown = document.querySelector('.about-company__drop-down-btn');
 
-// dropDownText.classList.add('is-hidden');
+dropDownText.classList.remove('about-company__drop-down');
+dropDownText.classList.add('about-company__drop-down-js');
+btnDropDown.classList.remove('about-company__drop-down-btn');
+btnDropDown.classList.add('about-company__drop-down-btn-js');
 
 const clickHandler = () => {
   dropDownText.classList.toggle('show-more');

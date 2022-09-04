@@ -77,7 +77,34 @@
   }
 }
 
-.about-company__wrapper button {
+.about-company__drop-down-btn {
+  display: none;
+}
+
+.about-company__drop-down-js {
+  height: 230px;
+  overflow-y: hidden;
+
+  @media (max-width: $vp-1023) {
+    height: 340px;
+  }
+
+  @media (max-width: $vp-767) {
+    height: 260px;
+  }
+}
+
+.about-company__drop-down {
+  height: 100%;
+}
+
+.about-company__drop-down-js.show-more {
+  height: 100%;
+  transition: 0.3s ease-in;
+}
+
+.about-company__drop-down-btn-js {
+  display: block;
   margin-top: 23px;
   padding: 14px 12px;
   min-width: 180px;
@@ -103,32 +130,14 @@
   }
 }
 
-.about-company__drop-down {
-  height: 230px;
-  overflow-y: hidden;
-
-  @media (max-width: $vp-1023) {
-    height: 340px;
-  }
-
-  @media (max-width: $vp-767) {
-    height: 260px;
-  }
-}
-
-.about-company__drop-down.show-more {
-  height: 100%;
-  transition: 0.3s ease-in;
-}
-
-.about-company .about-company__btn:focus {
+.about-company__drop-down-btn:focus {
   border: 1px solid $color-black-pearl;
 }
 
-.about-company .about-company__btn:hover {
+.about-company__drop-down-btn:hover {
   border: 1px solid $color-black-pearl;
 }
 
-.about-company .about-company__btn:active {
+.about-company__drop-down-btn:active {
   border: 1px solid $color-deep-sky-blue;
 }

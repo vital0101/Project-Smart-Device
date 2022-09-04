@@ -1317,7 +1317,28 @@ button,
   margin-bottom: 20px;
 }
 
-.about-company__wrapper button {
+.about-company__drop-down-btn {
+  display: none;
+}
+
+.about-company__drop-down-js {
+  height: 230px;
+  overflow-y: hidden;
+}
+
+.about-company__drop-down {
+  height: 100%;
+}
+
+.about-company__drop-down-js.show-more {
+  height: 100%;
+  -webkit-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.about-company__drop-down-btn-js {
+  display: block;
   margin-top: 23px;
   padding: 14px 12px;
   min-width: 180px;
@@ -1328,27 +1349,15 @@ button,
   color: #00b2ff;
 }
 
-.about-company__drop-down {
-  height: 230px;
-  overflow-y: hidden;
-}
-
-.about-company__drop-down.show-more {
-  height: 100%;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-}
-
-.about-company .about-company__btn:focus {
+.about-company__drop-down-btn:focus {
   border: 1px solid #041827;
 }
 
-.about-company .about-company__btn:hover {
+.about-company__drop-down-btn:hover {
   border: 1px solid #041827;
 }
 
-.about-company .about-company__btn:active {
+.about-company__drop-down-btn:active {
   border: 1px solid #00b2ff;
 }
 
@@ -2033,12 +2042,12 @@ button,
     font-size: 36px;
   }
 
-  .about-company__wrapper button {
-    margin-top: -3px;
+  .about-company__drop-down-js {
+    height: 340px;
   }
 
-  .about-company__drop-down {
-    height: 340px;
+  .about-company__drop-down-btn-js {
+    margin-top: -3px;
   }
 
   .services {
@@ -2335,7 +2344,11 @@ button,
     line-height: 19px;
   }
 
-  .about-company__wrapper button {
+  .about-company__drop-down-js {
+    height: 260px;
+  }
+
+  .about-company__drop-down-btn-js {
     margin-top: 13px;
     padding: 0;
     min-width: 160px;
@@ -2344,10 +2357,6 @@ button,
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0.05em;
-  }
-
-  .about-company__drop-down {
-    height: 260px;
   }
 
   .services {
