@@ -1706,6 +1706,7 @@ button,
   padding-top: 165px;
   padding-bottom: 213px;
   min-height: 838px;
+  background-color: #00b2ff;
   background-image: url("../img/content/fon.png");
   background-size: cover;
 }
@@ -2101,7 +2102,7 @@ button,
     padding-top: 46px;
     padding-bottom: 46px;
     min-height: 580px;
-    background: #00b2ff;
+    background-image: none;
   }
 
   .feedback__wrapper {
