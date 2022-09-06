@@ -21,16 +21,12 @@
 
 .services-card__item {
   width: 100%;
-  min-height: 650px;
+  height: 650px;
   background-color: $color-polo-blue;
 
 
   @media (max-width: $vp-1023) {
-    min-height: 250px;
-  }
-
-  @media (max-width: $vp-767) {
-    min-height: 250px;
+    height: 250px;
   }
 }
 

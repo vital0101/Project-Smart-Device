@@ -1406,7 +1406,7 @@ button,
 
 .services-card__item {
   width: 100%;
-  min-height: 650px;
+  height: 650px;
   background-color: #86a1bf;
 }
 
@@ -2077,7 +2077,7 @@ button,
   }
 
   .services-card__item {
-    min-height: 250px;
+    height: 250px;
   }
 
   .services-card__item a h3 {
@@ -2408,10 +2408,6 @@ button,
     font-size: 28px;
     font-weight: 400;
     line-height: 39px;
-  }
-
-  .services-card__item {
-    min-height: 250px;
   }
 
   .services-card__item a::after {
