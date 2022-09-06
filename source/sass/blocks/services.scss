@@ -1,7 +1,6 @@
 .services {
   padding-top: 70px;
   padding-bottom: 140px;
-  font-family: $ff-roboto-condensed;
   color: $color-default-white;
   background-color: $color-black-pearl;
 
@@ -24,12 +23,13 @@
 .services__wrapper h2 {
   margin: 0;
   margin-bottom: 50px;
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
 
   @media (max-width: $vp-1023) {
     margin-bottom: 39px;
-    font-size: 35px;
   }
 
   @media (max-width: $vp-767) {

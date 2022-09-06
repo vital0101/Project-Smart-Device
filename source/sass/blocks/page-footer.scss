@@ -1,7 +1,12 @@
 .page-footer {
-  padding: 50px 0 37px;
+  padding: 50px 0 47px;
   background-color: $color-black-pearl;
   color: $color-default-white;
+
+  @media (max-width: $vp-1023) {
+    padding-bottom: 54px;
+    overflow-x: hidden;
+  }
 
   @media (max-width: $vp-767) {
     padding-top: 35px;
@@ -13,7 +18,7 @@
 .page-footer__wrapper {
   display: flex;
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1240px;
 
   @media (max-width: $vp-1023) {
     display: grid;
@@ -93,8 +98,8 @@
 
 .page-footer__nav-wrapper {
   margin-top: 7px;
-  margin-right: 30px;
-  max-width: 470px;
+  margin-right: 34px;
+  max-width: 472px;
 
   @media (max-width: $vp-1023) {
     grid-column: 1 / 2;
@@ -131,13 +136,17 @@
 .page-footer__nav-header h2,
 .page-footer__contacts-header h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-family: $ff-roboto-condensed;
   font-weight: 400;
   line-height: 16px;
   font-size: 15px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 20px;
+  }
 
   @media (max-width: $vp-767) {
     margin-bottom: 0;
@@ -159,15 +168,19 @@
 
 .page-footer__contacts-wrapper {
   margin-top: 7px;
+  width: 354px;
 
   @media (max-width: $vp-1023) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    padding-left: 34px;
   }
 
   @media (max-width: $vp-767) {
     margin-top: 0;
+    padding-left: 0;
     position: relative;
+    width: 100%;
 
     &::after {
       content: "";
@@ -191,7 +204,7 @@
 }
 
 .page-footer__contacts-wrapper address {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-style: normal;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);

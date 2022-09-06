@@ -9,6 +9,7 @@
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
 
   @media (max-width: $vp-1023) {
+    position: static;
     padding-top: 20px;
     padding-bottom: 25px;
   }

@@ -1,23 +1,21 @@
 .form-callback {
   display: flex;
   flex-direction: column;
-  font-family: $ff-roboto-condensed;
-  font-weight: 400;
   color: $color-default-white;
 }
 
 .form-callback h2 {
   margin: 0;
   margin-bottom: 3px;
+  font-family: $ff-roboto-condensed;
   font-size: 30px;
+  font-weight: 400;
   line-height: 42px;
 }
 
 .form-callback p {
   margin: 0;
   margin-bottom: 40px;
-  font-family: $ff-placeholder;
-  line-height: 22px;
 }
 
 .form-callback input[type="text"],

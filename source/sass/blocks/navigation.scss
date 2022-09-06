@@ -10,6 +10,7 @@
 
 .navigation__logo {
   margin-right: 160px;
+  flex-shrink: 0;
 
   @media (max-width: $vp-1023) {
     margin-right: 50px;

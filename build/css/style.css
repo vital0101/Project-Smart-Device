@@ -865,6 +865,8 @@ button,
 
 .navigation__logo {
   margin-right: 160px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .navigation__user {
@@ -919,23 +921,21 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
-  font-weight: 400;
   color: #ffffff;
 }
 
 .form-callback h2 {
   margin: 0;
   margin-bottom: 3px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 30px;
+  font-weight: 400;
   line-height: 42px;
 }
 
 .form-callback p {
   margin: 0;
   margin-bottom: 40px;
-  font-family: "PTMono", "Arial", sans-serif;
-  line-height: 22px;
 }
 
 .form-callback input[type="text"],
@@ -1364,7 +1364,6 @@ button,
 .services {
   padding-top: 70px;
   padding-bottom: 140px;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
   color: #ffffff;
   background-color: #041827;
 }
@@ -1377,6 +1376,8 @@ button,
 .services__wrapper h2 {
   margin: 0;
   margin-bottom: 50px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
 }
@@ -1444,6 +1445,7 @@ button,
   top: 45px;
   left: 40px;
   width: 180px;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -1732,7 +1734,7 @@ button,
 }
 
 .page-footer {
-  padding: 50px 0 37px;
+  padding: 50px 0 47px;
   background-color: #041827;
   color: #ffffff;
 }
@@ -1742,7 +1744,7 @@ button,
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  max-width: 1220px;
+  max-width: 1240px;
 }
 
 .page-footer__logo-social-wrapper {
@@ -1761,14 +1763,14 @@ button,
 
 .page-footer__nav-wrapper {
   margin-top: 7px;
-  margin-right: 30px;
-  max-width: 470px;
+  margin-right: 34px;
+  max-width: 472px;
 }
 
 .page-footer__nav-header h2,
 .page-footer__contacts-header h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: 400;
   line-height: 16px;
@@ -1788,6 +1790,7 @@ button,
 
 .page-footer__contacts-wrapper {
   margin-top: 7px;
+  width: 354px;
 }
 
 .page-footer__contacts {
@@ -1801,7 +1804,7 @@ button,
 }
 
 .page-footer__contacts-wrapper address {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   font-style: normal;
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
@@ -1855,9 +1858,10 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
+  margin-left: 10px;
   padding: 0;
   list-style: none;
-  max-width: 210px;
+  max-width: 220px;
 }
 
 .social__item:not(:last-child) {
@@ -1919,6 +1923,7 @@ button,
   }
 
   .page-header {
+    position: static;
     padding-top: 20px;
     padding-bottom: 25px;
   }
@@ -1976,7 +1981,7 @@ button,
   }
 
   .hero__wrapper {
-    padding-top: 180px;
+    padding-top: 80px;
     padding-left: 0;
   }
 
@@ -2020,7 +2025,7 @@ button,
   }
 
   .features__item h2 {
-    margin-bottom: 7px;
+    margin-bottom: 11px;
     font-size: 24px;
     line-height: 30px;
   }
@@ -2060,7 +2065,6 @@ button,
 
   .services__wrapper h2 {
     margin-bottom: 39px;
-    font-size: 35px;
   }
 
   .services-card {
@@ -2091,11 +2095,22 @@ button,
   }
 
   .form-feedback textarea {
+    margin-bottom: 29px;
     padding-top: 29px;
   }
 
   .form-feedback__btn {
     margin-right: 85px;
+    padding-top: 16px;
+    padding-bottom: 10px;
+  }
+
+  .form-feedback__checkbox-wrapper {
+    margin-bottom: 3px;
+  }
+
+  .form-feedback input[type="checkbox"] + label::before {
+    top: 7px;
   }
 
   .feedback {
@@ -2116,6 +2131,11 @@ button,
 
   .feedback__form-wrapper {
     padding-right: 0;
+  }
+
+  .page-footer {
+    padding-bottom: 54px;
+    overflow-x: hidden;
   }
 
   .page-footer__wrapper {
@@ -2167,6 +2187,11 @@ button,
     grid-row: 2 / 3;
   }
 
+  .page-footer__nav-header h2,
+  .page-footer__contacts-header h2 {
+    margin-bottom: 20px;
+  }
+
   .page-footer__nav-col-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2181,6 +2206,7 @@ button,
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2 / 3;
+    padding-left: 34px;
   }
 
   .social__item:not(:last-child) {
@@ -2258,7 +2284,7 @@ button,
   }
 
   .hero__wrapper {
-    padding-top: 150px;
+    padding-top: 81px;
   }
 
   .hero h2 {
@@ -2328,8 +2354,8 @@ button,
   }
 
   .about-company {
-    padding-top: 25px;
-    padding-bottom: 77px;
+    padding-top: 22px;
+    padding-bottom: 80px;
   }
 
   .about-company__wrapper::before {
@@ -2534,7 +2560,9 @@ button,
 
   .page-footer__contacts-wrapper {
     margin-top: 0;
+    padding-left: 0;
     position: relative;
+    width: 100%;
   }
 
   .page-footer__contacts-wrapper::after {
