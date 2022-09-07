@@ -2332,19 +2332,23 @@ button,
     grid-template-columns: 1fr;
   }
 
+  .features__item:nth-child(-n+2) {
+    min-height: 340px;
+  }
+
   .features__item {
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 35px;
     padding-left: 30px;
-    min-height: 340px;
+    min-height: 325px;
     width: 100%;
   }
 
   .features__item h2 {
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-size: 20px;
-    line-height: 28px;
+    line-height: 30px;
   }
 
   .features__item svg {
