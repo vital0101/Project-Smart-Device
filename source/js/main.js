@@ -4,6 +4,7 @@ import {showMore} from './modules/show-more/show-more';
 import {isSmoothScroll} from './modules/smooth-scroll/smooth-scroll';
 import {openAcc} from './modules/accordeon/accordeon';
 import {showMaskTel} from './modules/mask-for-tel/mask-for-tel';
+// import {validateForm} from './modules/form-validate/form-validate';
 
 // ---------------------------------
 
@@ -21,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   showMore();
   openAcc();
   showMaskTel();
+  // validateForm();
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

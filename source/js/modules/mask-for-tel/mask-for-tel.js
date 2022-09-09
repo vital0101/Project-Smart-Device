@@ -1,4 +1,3 @@
-// function showMaskTel() {
 const eventCallback = (e) => {
   const el = e.target;
   const clearVal = el.dataset.phoneClear;
@@ -35,7 +34,7 @@ const eventCallback = (e) => {
 function showMaskTel() {
   const phoneInputs = document.querySelectorAll('[data-phone-pattern]');
   for (let elem of phoneInputs) {
-    for (let ev of ['input', 'blur', 'focus']) {
+    for (let ev of ['input', 'blur']) {
       elem.addEventListener(ev, eventCallback);
     }
   }
