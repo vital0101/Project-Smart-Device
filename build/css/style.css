@@ -1308,6 +1308,7 @@ button,
   margin: 0;
   margin-bottom: 12px;
   font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 51px;
 }
