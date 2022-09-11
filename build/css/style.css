@@ -1907,6 +1907,12 @@ button,
   }
 }
 
+@media (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1024px) and (-o-min-device-pixel-ratio: 2/1), (min-width: 1024px) and (min-resolution: 2dppx) {
+  .hero-header-wrapper {
+    background-image: url("../img/content/promo-desktop@2x.jpg");
+  }
+}
+
 @media (max-width: 1439px) {
   .container {
     padding: 0 32px;
@@ -2659,11 +2665,5 @@ button,
 @media (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 320px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 320px) and (min-resolution: 2dppx) {
   .hero-header-wrapper {
     background-image: url("../img/content/promo-mobile@2x.jpg");
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
-  .hero-header-wrapper {
-    background-image: url("../img/content/promo-desktop@2x.jpg");
   }
 }
